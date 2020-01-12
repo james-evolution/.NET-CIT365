@@ -32,23 +32,28 @@ namespace ConsoleApplication
             double width, height, woodLength, glassArea;
             string widthString, heightString;
 
-            // Request a width.
-            Console.WriteLine("Please enter a width:");
-            widthString = Console.ReadLine(); // Store the entered width.
-            width = double.Parse(widthString); // Parse to double.
+            Console.WriteLine("Press enter to continue. Press escape to exit the program.");
+            while (Console.ReadKey().Key != ConsoleKey.Escape)
+            {
+                // Request a width.
+                Console.WriteLine("Please enter a width:");
+                widthString = Console.ReadLine(); // Store the entered width.
+                width = double.Parse(widthString); // Parse to double.
 
-            // Request a height.
-            Console.WriteLine("Please enter a height:");
-            heightString = Console.ReadLine(); // Store the entered height.
-            height = double.Parse(heightString); // Parse to double.
+                // Request a height.
+                Console.WriteLine("Please enter a height:");
+                heightString = Console.ReadLine(); // Store the entered height.
+                height = double.Parse(heightString); // Parse to double.
 
-            // Arithmetic.
-            woodLength = 2 * (width + height) * 3.25;
-            glassArea = 2 * (width * height);
+                // Arithmetic.
+                woodLength = 2 * (width + height) * 3.25;
+                glassArea = 2 * (width * height);
 
-            // Output to console.
-            Console.WriteLine("The length of the wood is " + woodLength + " feet");
-            Console.WriteLine("The area of the glass is " + glassArea + " square metres");
+                // Output to console.
+                Console.WriteLine("The length of the wood is " + woodLength + " feet");
+                Console.WriteLine("The area of the glass is " + glassArea + " square metres");
+                Console.WriteLine("Calculation is complete. Press enter to continue, or escape to exit.");
+            }
         }
     }
 }
