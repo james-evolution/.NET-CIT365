@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +13,10 @@ namespace MathQuiz
 {
     public partial class Form1 : Form
     {
+        // Create correctSound.
+        SoundPlayer correctSound;
+        SoundPlayer tickSound;
+
         // Create a Random object called randomizer to generate random numbers.
         Random randomizer = new Random();
 
@@ -39,12 +44,24 @@ namespace MathQuiz
 
         public void StartTheQuiz()
         {
+            // Set backcolors:
+            sum.BackColor = Color.DarkGray;
+            difference.BackColor = Color.DarkGray;
+            product.BackColor = Color.DarkGray;
+            quotient.BackColor = Color.DarkGray;
+
+            // Set forecolors:
+            timeLabel.ForeColor = Color.Black;
+
+            // Assign audio files to correctSound & tickSound variables.
+            correctSound = new SoundPlayer(MathQuiz.Properties.Resources.correct);
+            tickSound = new SoundPlayer(MathQuiz.Properties.Resources.tick);
 
             // Format the date, cast to a string, and display it in the text of the dateLabel label.
             dateLabel.Text = rawDate.ToString("dd MMMM yyyy");
 
             // Change the background color to green.
-            timeLabel.BackColor = Color.LightGreen;
+            timeLabel.BackColor = Color.LimeGreen;
 
             // Fill in the addition problem with 2 randomly generated numbers.
             // This will choose a number between 0 and 50.
@@ -117,7 +134,7 @@ namespace MathQuiz
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            SetStyle(ControlStyles.SupportsTransparentBackColor, true);
         }
 
         private void Label4_Click(object sender, EventArgs e)
@@ -127,21 +144,38 @@ namespace MathQuiz
 
         private void Sum_ValueChanged(object sender, EventArgs e)
         {
-
+            if (addend1 + addend2 == sum.Value)
+            {
+                correctSound.Play();
+                sum.BackColor = Color.LimeGreen;
+            }
         }
+
         private void difference_ValueChanged(object sender, EventArgs e)
         {
-
+            if (minuend - subtrahend == difference.Value)
+            {
+                correctSound.Play();
+                difference.BackColor = Color.LimeGreen;
+            }
         }
 
         private void product_ValueChanged(object sender, EventArgs e)
         {
-
+            if (multiplicand * multiplier == product.Value)
+            {
+                correctSound.Play();
+                product.BackColor = Color.LimeGreen;
+            }
         }
 
         private void quotient_ValueChanged(object sender, EventArgs e)
         {
-
+            if (dividend / divisor == quotient.Value)
+            {
+                correctSound.Play();
+                quotient.BackColor = Color.LimeGreen;
+            }
         }
         private void Label2_Click(object sender, EventArgs e)
         {
@@ -169,12 +203,13 @@ namespace MathQuiz
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
+            tickSound.Play();
 
             if (CheckTheAnswer()) {
                 // If CheckTheAnswer() returns true, then the user got the answer right. Stop the timer 
                 // and show a MessageBox.
                 timer1.Stop();
-                timeLabel.BackColor = Color.Empty;
+                timeLabel.BackColor = Color.Transparent;
                 timerBar.Value = 30; // Refill the timer bar.
                 MessageBox.Show("You got all the answers right!",
                                 "Congratulations!");
@@ -194,7 +229,8 @@ namespace MathQuiz
                 // If the user runs out of time, stop the timer, show a MessageBox, and fill in the answers.
                 timer1.Stop();
                 timerBar.Value = 30; // Refill the timer bar.
-                timeLabel.BackColor = Color.Empty;
+                timeLabel.BackColor = Color.Transparent;
+                timeLabel.ForeColor = Color.White;
                 timeLabel.Text = "Time's up!";
                 MessageBox.Show("You didn't finish in time. Sorry!");
 
@@ -205,10 +241,10 @@ namespace MathQuiz
                 quotient.Value = dividend / divisor;
 
                 // Change the answer fields to light green.
-                sum.BackColor = Color.LightGreen;
-                difference.BackColor = Color.LightGreen;
-                product.BackColor = Color.LightGreen;
-                quotient.BackColor = Color.LightGreen;
+                sum.BackColor = Color.LimeGreen;
+                difference.BackColor = Color.LimeGreen;
+                product.BackColor = Color.LimeGreen;
+                quotient.BackColor = Color.LimeGreen;
 
                 // Re-enable the start button.
                 startButton.Enabled = true;

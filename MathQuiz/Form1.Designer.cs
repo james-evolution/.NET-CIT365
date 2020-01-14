@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.timeLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.plusLeftLabel = new System.Windows.Forms.Label();
@@ -63,8 +64,9 @@
             // 
             // timeLabel
             // 
-            this.timeLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.timeLabel.BackColor = System.Drawing.Color.Transparent;
             this.timeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeLabel.ForeColor = System.Drawing.Color.Black;
             this.timeLabel.Location = new System.Drawing.Point(161, 44);
             this.timeLabel.Name = "timeLabel";
             this.timeLabel.Size = new System.Drawing.Size(134, 30);
@@ -74,7 +76,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(38, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 25);
@@ -84,7 +88,9 @@
             // 
             // plusLeftLabel
             // 
+            this.plusLeftLabel.BackColor = System.Drawing.Color.Transparent;
             this.plusLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plusLeftLabel.ForeColor = System.Drawing.Color.White;
             this.plusLeftLabel.Location = new System.Drawing.Point(37, 93);
             this.plusLeftLabel.Name = "plusLeftLabel";
             this.plusLeftLabel.Size = new System.Drawing.Size(60, 50);
@@ -94,7 +100,9 @@
             // 
             // plusSign
             // 
+            this.plusSign.BackColor = System.Drawing.Color.Transparent;
             this.plusSign.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plusSign.ForeColor = System.Drawing.Color.White;
             this.plusSign.Location = new System.Drawing.Point(103, 93);
             this.plusSign.Name = "plusSign";
             this.plusSign.Size = new System.Drawing.Size(60, 50);
@@ -104,7 +112,9 @@
             // 
             // label4
             // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(235, 93);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 50);
@@ -115,16 +125,21 @@
             // 
             // sum
             // 
+            this.sum.BackColor = System.Drawing.Color.DarkGray;
+            this.sum.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sum.Location = new System.Drawing.Point(301, 110);
             this.sum.Name = "sum";
             this.sum.Size = new System.Drawing.Size(120, 20);
             this.sum.TabIndex = 2;
             this.sum.ValueChanged += new System.EventHandler(this.Sum_ValueChanged);
             this.sum.Enter += new System.EventHandler(this.answer_Enter);
+            this.sum.Leave += new System.EventHandler(this.Sum_ValueChanged);
             // 
             // plusRightLabel
             // 
+            this.plusRightLabel.BackColor = System.Drawing.Color.Transparent;
             this.plusRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plusRightLabel.ForeColor = System.Drawing.Color.White;
             this.plusRightLabel.Location = new System.Drawing.Point(169, 93);
             this.plusRightLabel.Name = "plusRightLabel";
             this.plusRightLabel.Size = new System.Drawing.Size(60, 50);
@@ -134,7 +149,9 @@
             // 
             // minusRightLabel
             // 
+            this.minusRightLabel.BackColor = System.Drawing.Color.Transparent;
             this.minusRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minusRightLabel.ForeColor = System.Drawing.Color.White;
             this.minusRightLabel.Location = new System.Drawing.Point(169, 143);
             this.minusRightLabel.Name = "minusRightLabel";
             this.minusRightLabel.Size = new System.Drawing.Size(60, 50);
@@ -144,15 +161,20 @@
             // 
             // difference
             // 
+            this.difference.BackColor = System.Drawing.Color.DarkGray;
+            this.difference.Cursor = System.Windows.Forms.Cursors.Hand;
             this.difference.Location = new System.Drawing.Point(301, 160);
             this.difference.Name = "difference";
             this.difference.Size = new System.Drawing.Size(120, 20);
             this.difference.TabIndex = 3;
             this.difference.Enter += new System.EventHandler(this.answer_Enter);
+            this.difference.Leave += new System.EventHandler(this.difference_ValueChanged);
             // 
             // label3
             // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(235, 143);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 50);
@@ -162,7 +184,9 @@
             // 
             // label5
             // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(103, 143);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 50);
@@ -172,7 +196,9 @@
             // 
             // minusLeftLabel
             // 
+            this.minusLeftLabel.BackColor = System.Drawing.Color.Transparent;
             this.minusLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minusLeftLabel.ForeColor = System.Drawing.Color.White;
             this.minusLeftLabel.Location = new System.Drawing.Point(37, 143);
             this.minusLeftLabel.Name = "minusLeftLabel";
             this.minusLeftLabel.Size = new System.Drawing.Size(60, 50);
@@ -182,7 +208,9 @@
             // 
             // timesRightLabel
             // 
+            this.timesRightLabel.BackColor = System.Drawing.Color.Transparent;
             this.timesRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timesRightLabel.ForeColor = System.Drawing.Color.White;
             this.timesRightLabel.Location = new System.Drawing.Point(169, 191);
             this.timesRightLabel.Name = "timesRightLabel";
             this.timesRightLabel.Size = new System.Drawing.Size(60, 50);
@@ -192,15 +220,20 @@
             // 
             // product
             // 
+            this.product.BackColor = System.Drawing.Color.DarkGray;
+            this.product.Cursor = System.Windows.Forms.Cursors.Hand;
             this.product.Location = new System.Drawing.Point(301, 208);
             this.product.Name = "product";
             this.product.Size = new System.Drawing.Size(120, 20);
             this.product.TabIndex = 4;
             this.product.Enter += new System.EventHandler(this.answer_Enter);
+            this.product.Leave += new System.EventHandler(this.product_ValueChanged);
             // 
             // label6
             // 
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(235, 191);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 50);
@@ -210,7 +243,9 @@
             // 
             // label7
             // 
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(103, 191);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(60, 50);
@@ -221,7 +256,9 @@
             // 
             // timesLeftLabel
             // 
+            this.timesLeftLabel.BackColor = System.Drawing.Color.Transparent;
             this.timesLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timesLeftLabel.ForeColor = System.Drawing.Color.White;
             this.timesLeftLabel.Location = new System.Drawing.Point(37, 191);
             this.timesLeftLabel.Name = "timesLeftLabel";
             this.timesLeftLabel.Size = new System.Drawing.Size(60, 50);
@@ -231,7 +268,9 @@
             // 
             // dividedRightLabel
             // 
+            this.dividedRightLabel.BackColor = System.Drawing.Color.Transparent;
             this.dividedRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dividedRightLabel.ForeColor = System.Drawing.Color.White;
             this.dividedRightLabel.Location = new System.Drawing.Point(169, 238);
             this.dividedRightLabel.Name = "dividedRightLabel";
             this.dividedRightLabel.Size = new System.Drawing.Size(60, 50);
@@ -241,15 +280,20 @@
             // 
             // quotient
             // 
+            this.quotient.BackColor = System.Drawing.Color.DarkGray;
+            this.quotient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.quotient.Location = new System.Drawing.Point(301, 255);
             this.quotient.Name = "quotient";
             this.quotient.Size = new System.Drawing.Size(120, 20);
             this.quotient.TabIndex = 5;
             this.quotient.Enter += new System.EventHandler(this.answer_Enter);
+            this.quotient.Leave += new System.EventHandler(this.quotient_ValueChanged);
             // 
             // label10
             // 
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(235, 238);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(60, 50);
@@ -259,7 +303,9 @@
             // 
             // label11
             // 
+            this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(103, 238);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(60, 50);
@@ -270,7 +316,9 @@
             // 
             // dividedLeftLabel
             // 
+            this.dividedLeftLabel.BackColor = System.Drawing.Color.Transparent;
             this.dividedLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dividedLeftLabel.ForeColor = System.Drawing.Color.White;
             this.dividedLeftLabel.Location = new System.Drawing.Point(37, 238);
             this.dividedLeftLabel.Name = "dividedLeftLabel";
             this.dividedLeftLabel.Size = new System.Drawing.Size(60, 50);
@@ -281,13 +329,14 @@
             // startButton
             // 
             this.startButton.AutoSize = true;
+            this.startButton.BackColor = System.Drawing.Color.DarkGray;
             this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startButton.Location = new System.Drawing.Point(183, 308);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(136, 34);
             this.startButton.TabIndex = 1;
             this.startButton.Text = "Start the Quiz!";
-            this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.UseVisualStyleBackColor = false;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // timer1
@@ -298,10 +347,11 @@
             // dateLabel
             // 
             this.dateLabel.AutoSize = true;
+            this.dateLabel.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel.Location = new System.Drawing.Point(386, 9);
-            this.dateLabel.MinimumSize = new System.Drawing.Size(50, 10);
+            this.dateLabel.MinimumSize = new System.Drawing.Size(90, 10);
             this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(50, 13);
+            this.dateLabel.Size = new System.Drawing.Size(90, 13);
             this.dateLabel.TabIndex = 23;
             // 
             // timerBar
@@ -319,6 +369,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MathQuiz.Properties.Resources.jaqm_bg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(484, 361);
             this.Controls.Add(this.timerBar);
             this.Controls.Add(this.dateLabel);
@@ -346,6 +398,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.timeLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Jeremy James Alkire + MathQuiz";
