@@ -16,6 +16,9 @@ namespace ConsoleApplication
             Console.WriteLine($"My name is {name}. I am from the {location}.");
             Console.WriteLine($"The current day of the week is: {dateToday.DayOfWeek}.");
 
+            int j = (int)39.55;
+            Console.WriteLine(j);
+
             // Subtract the date of Christmas from the date of today.
             System.TimeSpan difference = christmas.Subtract(dateToday);
 

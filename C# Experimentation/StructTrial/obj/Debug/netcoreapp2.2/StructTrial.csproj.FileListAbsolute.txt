@@ -1,0 +1,11 @@
+Z:\Visual Studio 2019 Projects\.NET-CIT365\C# Experimentation\StructTrial\obj\Debug\netcoreapp2.2\StructTrial.csprojAssemblyReference.cache
+Z:\Visual Studio 2019 Projects\.NET-CIT365\C# Experimentation\StructTrial\obj\Debug\netcoreapp2.2\StructTrial.csproj.CoreCompileInputs.cache
+Z:\Visual Studio 2019 Projects\.NET-CIT365\C# Experimentation\StructTrial\obj\Debug\netcoreapp2.2\StructTrial.AssemblyInfoInputs.cache
+Z:\Visual Studio 2019 Projects\.NET-CIT365\C# Experimentation\StructTrial\obj\Debug\netcoreapp2.2\StructTrial.AssemblyInfo.cs
+Z:\Visual Studio 2019 Projects\.NET-CIT365\C# Experimentation\StructTrial\bin\Debug\netcoreapp2.2\StructTrial.deps.json
+Z:\Visual Studio 2019 Projects\.NET-CIT365\C# Experimentation\StructTrial\bin\Debug\netcoreapp2.2\StructTrial.runtimeconfig.json
+Z:\Visual Studio 2019 Projects\.NET-CIT365\C# Experimentation\StructTrial\bin\Debug\netcoreapp2.2\StructTrial.runtimeconfig.dev.json
+Z:\Visual Studio 2019 Projects\.NET-CIT365\C# Experimentation\StructTrial\bin\Debug\netcoreapp2.2\StructTrial.dll
+Z:\Visual Studio 2019 Projects\.NET-CIT365\C# Experimentation\StructTrial\bin\Debug\netcoreapp2.2\StructTrial.pdb
+Z:\Visual Studio 2019 Projects\.NET-CIT365\C# Experimentation\StructTrial\obj\Debug\netcoreapp2.2\StructTrial.dll
+Z:\Visual Studio 2019 Projects\.NET-CIT365\C# Experimentation\StructTrial\obj\Debug\netcoreapp2.2\StructTrial.pdb
