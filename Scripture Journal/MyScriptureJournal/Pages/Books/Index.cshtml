@@ -13,9 +13,9 @@
 
 <form>
     <p>
-        Book: <input type="text" asp-for="SearchString" />
+        Book: <input type="text" asp-for="BookSearchString" />
         <input type="submit" value="Filter" />
-        Note: <input type="text" asp-for="NoteString" />
+        Note: <input type="text" asp-for="NoteSearchString" />
         <input type="submit" value="Filter" />
     </p>
 </form>
@@ -24,10 +24,14 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Book[0].BookName)
+                <a asp-page="./Index" asp-route-sortOrder="@Model.BookSort">
+                    @Html.DisplayNameFor(model => model.Book[0].BookName)
+                </a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Book[0].DateAdded)
+                <a asp-page="./Index" asp-route-sortOrder="@Model.DateSort">
+                    @Html.DisplayNameFor(model => model.Book[0].DateAdded)
+                 </a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Book[0].Chapter)
