@@ -8,7 +8,7 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-page="Create" class="button_link" id="create_link">Create New</a>
+    <a onmouseover="playClick()" asp-page="Create" class="button_link" id="create_link">Create New</a>
 </p>
 
 <br />
@@ -26,12 +26,12 @@
     <thead>
         <tr>
             <th>
-                <a asp-page="./Index" asp-route-sortOrder="@Model.BookSort">
+                <a onmouseover="playClick()" asp-page="./Index" asp-route-sortOrder="@Model.BookSort">
                     @Html.DisplayNameFor(model => model.Book[0].BookName)
                 </a>
             </th>
             <th>
-                <a asp-page="./Index" asp-route-sortOrder="@Model.DateSort">
+                <a onmouseover="playClick()" asp-page="./Index" asp-route-sortOrder="@Model.DateSort">
                     @Html.DisplayNameFor(model => model.Book[0].DateAdded)
                  </a>
             </th>
@@ -66,9 +66,9 @@
                 @Html.DisplayFor(modelItem => item.Note)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.ID" class="button_link">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.ID" class="button_link">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.ID" class="button_link">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.ID" class="button_link" onmouseover="playClick()">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID" class="button_link" onmouseover="playClick()">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID" class="button_link" onmouseover="playClick()">Delete</a>
             </td>
         </tr>
 }
