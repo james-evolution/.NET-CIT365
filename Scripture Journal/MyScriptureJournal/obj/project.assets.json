@@ -12939,11 +12939,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Robert\\source\\repos\\MyScriptureJournal\\MyScriptureJournal\\MyScriptureJournal.csproj",
+      "projectUniqueName": "Z:\\Visual Studio 2019 Projects\\.NET-CIT365\\Scripture Journal\\MyScriptureJournal\\MyScriptureJournal.csproj",
       "projectName": "MyScriptureJournal",
-      "projectPath": "C:\\Users\\Robert\\source\\repos\\MyScriptureJournal\\MyScriptureJournal\\MyScriptureJournal.csproj",
+      "projectPath": "Z:\\Visual Studio 2019 Projects\\.NET-CIT365\\Scripture Journal\\MyScriptureJournal\\MyScriptureJournal.csproj",
       "packagesPath": "C:\\Users\\Robert\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Robert\\source\\repos\\MyScriptureJournal\\MyScriptureJournal\\obj\\",
+      "outputPath": "Z:\\Visual Studio 2019 Projects\\.NET-CIT365\\Scripture Journal\\MyScriptureJournal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
