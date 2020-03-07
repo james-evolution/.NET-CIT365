@@ -1,56 +1,223 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿@import url('https://fonts.googleapis.com/css?family=Spectral+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Stoke&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mate+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+SC&display=swap');
+
 
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
 }
+
+form {
+    margin-bottom: 40px;
+}
+
+.customer_name {
+    margin-top: 40px;
+}
+
+input {
+    color: black;
+}
+
+#myCarousel {
+    margin-top: 8px;
+}
+
+.carousel-inner .item-active {
+    height: 100%;
+}
+
+.carousel-inner .item {
+    height: 100%;
+    opacity: 1;
+}
+
+h3 {
+    font-size: 38px;
+}
+
+.carousel-caption {
+    height: 70%;
+    font-size: 16px;
+}
+
+/*     -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+}
+
+.form-group {
+    width: 100%;
+}
+
+dl {
+    margin-bottom: 40px;
+}
+
+
+.navbar {
+    opacity: 0.7;
+    background-color: black;
+    box-shadow: 5px 5px 5px cyan;
+    margin-bottom: 0px;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+
+img {
+    margin-bottom: 15px;
+}
+
+.pb-3 {
+    background-color: black;
+    opacity: 0.75;
+    padding: 50px;
+    box-shadow: 10px 10px 5px black;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+
+a {
+    color: cyan;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: #00b9bc;
+    }
+
+#create_desk_link {
+    background-color: black !important;
+}
+
+.button_link {
+    border-style: outset;
+    border-color: cyan;
+    padding: 6px;
+    margin: 4px;
+    background-color: black;
+    box-shadow: 5px 5px 5px black;
+}
+
+#create_link {
+    margin-bottom: 200px;
+}
+
+/*Override bootstrap's limitation on container width.*/
+@media (min-width: 1200px) {
+    .container {
+    }
+}
+
+@media (max-width: 1200px) {
+    table {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    table {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .button_link {
+        border-style: none;
+    }
+}
+
+/*  */
+
+body {
+    background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F62%2F35%2FsrXJfC.jpg&f=1&nofb=1') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Cormorant SC', serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
+    scroll-behavior: smooth;
 }
+
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
+
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
 button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+    font-size: 1rem;
+    line-height: inherit;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    color: white;
 }
+
+.table {
+    color: white;
+}
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    opacity: 0.7;
+    background-color: black;
+    box-shadow: 5px -5px 5px cyan;
 }
