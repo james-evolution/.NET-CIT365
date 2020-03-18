@@ -1,0 +1,111 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.navbar {
+    background-color: #181818;
+    font-size: 14px;
+}
+
+.navbar a {
+    color: cyan;
+}
+
+body {
+    background-image: url("http://faintdev.net/academic/images/steelgate.jpg");
+    background-position: center;
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+
+body a:hover {
+    color: #099699;
+}
+
+h1 {
+    margin-bottom: 80px;
+}
+
+.pb-3 {
+    margin-top: 80px;
+    background-color: #181818;
+    padding: 50px;
+    font-size: 14px;
+    box-shadow: 1px 1px 5px 5px black;
+}
+
+table {
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-collapse: initial;
+}
+
+.table2 {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+    .table2 thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;
+    }
+
+    .table2 th, .table2 td {
+        padding: 0.75rem;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+    }
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}

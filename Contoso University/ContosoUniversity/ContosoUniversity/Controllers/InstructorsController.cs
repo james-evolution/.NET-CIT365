@@ -33,7 +33,7 @@ namespace ContosoUniversity.Controllers
                 .Include(i => i.CourseAssignments)
                 .ThenInclude(i => i.Course)
                 .ThenInclude(i => i.Department)
-                .AsNoTracking()
+                //.AsNoTracking()
                 .OrderBy(i => i.LastName)
                 .ToListAsync();
 
@@ -126,7 +126,7 @@ namespace ContosoUniversity.Controllers
             var instructor = await _context.Instructors
                 .Include(i => i.OfficeAssignment)
                 .Include(i => i.CourseAssignments).ThenInclude(i => i.Course)
-                .AsNoTracking()
+                //.AsNoTracking()
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (instructor == null)
             {

@@ -1,5 +1,5 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 
 a.navbar-brand {
   white-space: normal;
@@ -16,6 +16,102 @@ html {
   html {
     font-size: 16px;
   }
+}
+
+body {
+    background-image: url("http://faintdev.net/academic/images/darkcyanmaterial.png");
+    background-position: center;
+    color: black;
+    /*font-family: 'Special Elite', cursive;*/
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+}
+
+body a {
+    color: cyan;
+}
+
+body a:hover {
+    color: #099699;
+}
+
+.navbar {
+    background-color: #181818;
+    margin-bottom: 40px;
+}
+
+.navbar a {
+    color: cyan;
+}
+
+@keyframes glowblink {
+    from {
+        box-shadow: 1px 1px 10px 10px black;
+    }
+
+    to {
+        box-shadow: 1px 1px 10px 10px cyan;
+    }
+}
+
+.btn2 {
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.pb-3 {
+    background-color: #181818;
+    color: white;
+    padding: 40px;
+    margin-bottom: 40px;
+    /*border-style: inset;
+    border-width: 5px;
+    border-color: black;*/
+    box-shadow: 1px 1px 5px 5px black;
+}
+
+table {
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-collapse: initial;
+}
+
+.table2 {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.table2 thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table2 th, .table2 td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
 }
 
 .border-top {
